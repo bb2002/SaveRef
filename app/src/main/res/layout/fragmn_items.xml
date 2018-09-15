@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+    <saintdev.kr.saveref.views.custom.DefaultTitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/items_title"
+        app:text="냉장고에 보관된 음식"
+        app:textColor="@color/colorBlack"
+        android:layout_marginBottom="16dp"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/food_in_items"
+        android:layout_below="@id/items_title"/>
+</RelativeLayout>

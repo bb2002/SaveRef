@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <saintdev.kr.saveref.views.custom.DefaultTitleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="온도 현황"
+                app:textColor="@color/colorAccent"
+                android:layout_margin="16dp"/>
+
+            <org.eazegraph.lib.charts.ValueLineChart
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/temp_chart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:egUseCubic="false"
+                app:egUseOverlapFill="false"
+                app:egLegendColor="@color/colorBlack"
+                app:egIndicatorLineColor="#e74c3c"
+                app:egLegendHeight="40dp"
+                app:egShowStandardValue="false"/>
+
+            <saintdev.kr.saveref.views.custom.DefaultTitleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="습도 현황"
+                app:textColor="@color/colorAccent"
+                android:layout_margin="16dp"/>
+
+            <org.eazegraph.lib.charts.ValueLineChart
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/humi_chart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:egUseCubic="false"
+                app:egUseOverlapFill="false"
+                app:egLegendColor="@color/colorBlack"
+                app:egIndicatorLineColor="#3498db"
+                app:egLegendHeight="40dp"
+                app:egShowStandardValue="true"/>
+
+            <saintdev.kr.saveref.views.custom.DefaultTitleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="산소 상황"
+                app:textColor="@color/colorAccent"
+                android:layout_margin="16dp"/>
+
+            <org.eazegraph.lib.charts.ValueLineChart
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/o2_chart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:egUseCubic="false"
+                app:egUseOverlapFill="false"
+                app:egLegendColor="@color/colorBlack"
+                app:egIndicatorLineColor="#95a5a6"
+                app:egLegendHeight="40dp"
+                app:egShowStandardValue="true"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

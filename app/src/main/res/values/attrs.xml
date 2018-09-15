@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="text" format="reference|string" />
+    <attr name="textColor" format="reference|integer" />
+
+    <declare-styleable name="DefaultTitleView">
+        <attr name="text" />
+        <attr name="textColor" />
+    </declare-styleable>
+
+    <declare-styleable name="DefaultContentView">
+        <attr name="text" />
+        <attr name="textColor" />
+        <attr name="bgColor" format="reference|integer" />
+    </declare-styleable>
+</resources>

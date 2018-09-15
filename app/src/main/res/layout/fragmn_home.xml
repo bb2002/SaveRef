@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- 문이 열린 횟수를 그린다. -->
+            <saintdev.kr.saveref.views.custom.DefaultTitleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="문이 열린 횟수"
+                app:textColor="@color/colorAccent"
+                android:layout_marginBottom="8dp"/>
+            <saintdev.kr.saveref.views.custom.DefaultContentView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/door_open_count_view"
+                app:text="0회"
+                app:textColor="@color/colorBlack"
+                app:bgColor="@color/colorWhite"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- 문이 열린 누적 시간을 그린다. -->
+            <saintdev.kr.saveref.views.custom.DefaultTitleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="문 열림 시간 (누적)"
+                app:textColor="@color/colorAccent"
+                android:layout_marginBottom="8dp"/>
+            <saintdev.kr.saveref.views.custom.DefaultContentView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/door_open_time_view"
+                app:text="0분 0초"
+                app:textColor="@color/colorBlack"
+                app:bgColor="@color/colorWhite"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- 전력 사용량을 그린다 -->
+            <saintdev.kr.saveref.views.custom.DefaultTitleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="전력 사용량"
+                app:textColor="@color/colorAccent"
+                android:layout_marginBottom="8dp"/>
+            <saintdev.kr.saveref.views.custom.DefaultContentView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/door_open_power_view"
+                app:text="0.0Khw"
+                app:textColor="@color/colorBlack"
+                app:bgColor="@color/colorWhite"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- 전기 요금을그린다. -->
+            <saintdev.kr.saveref.views.custom.DefaultTitleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="전기 요금 (누적)"
+                app:textColor="@color/colorAccent"
+                android:layout_marginBottom="8dp"/>
+            <saintdev.kr.saveref.views.custom.DefaultContentView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/door_open_powerrate_view"
+                app:text="0원"
+                app:textColor="@color/colorBlack"
+                app:bgColor="@color/colorWhite"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- 탄소 배출량을 그린다 -->
+            <saintdev.kr.saveref.views.custom.DefaultTitleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="배출한 탄소"
+                app:textColor="@color/colorAccent"
+                android:layout_marginBottom="8dp"/>
+            <saintdev.kr.saveref.views.custom.DefaultContentView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/door_open_co2_view"
+                app:text="0g"
+                app:textColor="@color/colorBlack"
+                app:bgColor="@color/colorWhite"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

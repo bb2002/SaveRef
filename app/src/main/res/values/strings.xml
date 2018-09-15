@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">냉장고를 부탁해</string>
+
+    <string name="main_nav_item1">홈</string>
+    <string name="main_nav_item2">냉장고 정보</string>
+    <string name="main_nav_item3">제품 목록</string>
+</resources>
